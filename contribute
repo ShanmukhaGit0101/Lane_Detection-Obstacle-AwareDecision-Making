@@ -1,0 +1,12 @@
+# Contribution Guide
+
+We welcome community contributions to improve and test the project.
+
+### 📤 How to Contribute
+1. Fork the repository.
+2. Add your experimental results 
+3. Update your notes or metrics in `results/performance_metrics.txt`.
+4. Submit a Pull Request describing your additions.
+
+### 🧠 Acknowledgement
+All contributors will be credited in the main README.
