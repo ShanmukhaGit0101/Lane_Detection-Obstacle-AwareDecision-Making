@@ -1,30 +1,88 @@
-# Lane_Detection-Obstacle-AwareDecision-Making
-# 🚗 Advanced Lane Detection using Computer Vision
+# Vision-Based Lane Detection and Obstacle-Aware Decision Making
 
-A robust **lane detection system** built using Python and OpenCV, inspired by the Advanced Lane Lines project.  
-This implementation performs **camera calibration, perspective transformation, thresholding, and lane overlay** on road videos — ideal for autonomous driving research and ADAS experimentation.
+An Advanced Driver Assistance System (ADAS) prototype that integrates lane detection, object detection, and speed calibration modules using OpenCV, YOLO, and image processing.  
+---
+
+## Author
+- Shanmukha Vinayak M
+---
+
+## Features
+
+- Lane Detection using Canny edge detection and Hough Transform.
+- Object Detection using YOLOv5 for vehicle and pedestrian awareness.
+- Speed Calibration using pixel-distance and frame-time estimation.
+- Voice Alerts through gTTS for real-time warnings.
+- Visualization and video output generation using MoviePy.
 
 ---
 
-## 🎯 Project Overview
+## Tech Stack
 
-This project demonstrates a complete **lane detection pipeline** that identifies lane lines in road images and videos.  
-It combines multiple computer vision techniques to detect lane curvature, lane deviation, and overlay visual cues for driver assistance.
+| Category | Tools/Libraries |
+|-----------|-----------------|
+| Programming | Python 3.10 |
+| Computer Vision | OpenCV, NumPy, Matplotlib |
+| Object Detection | YOLOv5 (Ultralytics) |
+| Voice Alerts | gTTS, playsound |
+| Visualization | moviepy |
+| Deep Learning | PyTorch, TorchVision |
 
----
-
-## ⚙️ Features
-
-- 📷 **Camera Calibration** — Corrects lens distortion using chessboard images.  
-- 🎨 **Thresholding** — Applies gradient and color thresholds to isolate lane pixels.  
-- 🔁 **Perspective Transformation** — Warps images to a top-down “bird’s-eye” view.  
-- 🧠 **Lane Detection** — Identifies lane lines using sliding window search and polynomial fitting.  
-- 🎥 **Video Processing** — Detects lanes frame-by-frame and saves annotated output.
 
 ---
 
-## 🧩 System Flow
+## Example Results
 
-```text
-Input Frame → Undistortion → Thresholding → Perspective Transform
-             → Lane Detection → Inverse Transform → Overlay → Output
+| Module | Output |
+|---------|---------|
+| Lane Detection | Identified lane boundaries with region masking |
+| Object Detection | YOLOv5 detection bounding boxes |
+| Combined Output | Lane + Object + Speed info overlaid on video frames |
+
+
+
+---
+
+## Results Summary
+
+- Multi-module ADAS prototype integration successful.
+- Reliable lane detection under normal lighting.
+- YOLO-based obstacle detection operational in real-time.
+- Voice alerts triggered appropriately for detected hazards.
+
+---
+
+## Future Scope
+
+- Deep Learning-based lane models (SCNN/LaneNet).
+- Sensor Fusion with GPS and IMU.
+- Weather and night vision adaptability.
+- Embedded optimization on Jetson or Raspberry Pi.
+- Decision-making logic for autonomous control.
+
+---
+
+## Installation and Usage
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/ShanmukhaGit0101/Lane_Detection-Obstacle-AwareDecision-Making.git
+cd Lane_Detection-Obstacle-AwareDecision-Making
+```
+
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the Main Script
+```bash
+python main.py
+```
+
+
+
+
+
+## Repository Link
+https://github.com/ShanmukhaGit0101/Lane_Detection-Obstacle-AwareDecision-Making
